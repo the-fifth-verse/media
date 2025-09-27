@@ -2,73 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>All Done</title>
+  <title>Welcome to The Fifth Verse</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
-    /* DARK MODE PREVENTION - Forces colors in all email clients */
-    [data-ogsc] .dark-mode-bg { background-color: #F5F0E6 !important; }
-    [data-ogsc] .dark-mode-white { background-color: #FFFFFF !important; }
-    [data-ogsc] .dark-mode-header { background-color: #333F48 !important; }
-    [data-ogsc] .dark-mode-text { color: #2A5D5E !important; }
-    [data-ogsc] .dark-mode-white-text { color: #F5F0E6 !important; }
-    
-    /* Gmail Dark Mode Override */
-    u + .body .dark-mode-bg { background-color: #F5F0E6 !important; }
-    u + .body .dark-mode-white { background-color: #FFFFFF !important; }
-    u + .body .dark-mode-header { background-color: #333F48 !important; }
-    u + .body .dark-mode-text { color: #2A5D5E !important; }
-    u + .body .dark-mode-white-text { color: #F5F0E6 !important; }
-    
-    /* Outlook Dark Mode Override */
-    .ExternalClass .dark-mode-bg { background-color: #F5F0E6 !important; }
-    .ExternalClass .dark-mode-white { background-color: #FFFFFF !important; }
-    .ExternalClass .dark-mode-header { background-color: #333F48 !important; }
-    .ExternalClass .dark-mode-text { color: #2A5D5E !important; }
-    .ExternalClass .dark-mode-white-text { color: #F5F0E6 !important; }
-    
-    /* Apple Mail Dark Mode Override */
-    @media (prefers-color-scheme: dark) {
-      .dark-mode-bg { background-color: #F5F0E6 !important; }
-      .dark-mode-white { background-color: #FFFFFF !important; }
-      .dark-mode-header { background-color: #333F48 !important; }
-      .dark-mode-text { color: #2A5D5E !important; }
-      .dark-mode-white-text { color: #F5F0E6 !important; }
-    }
-    
-    /* MOBILE RESPONSIVE */
-    @media only screen and (max-width: 600px) {
-      table[width="600"] { width: 100% !important; min-width: 320px !important; }
-      .content-td { padding: 20px !important; }
-      .header-td { padding: 15px !important; }
-      .footer-td { padding: 15px !important; }
-      .logo-span { font-size: 20px !important; margin-left: 8px !important; }
-      .logo-img { width: 40px !important; height: 40px !important; }
-      .body-text { font-size: 16px !important; line-height: 24px !important; }
-      .cta-button { 
-        font-size: 16px !important; 
-        padding: 14px 40px !important;
-      }
-      .social-icons img { width: 20px !important; height: 20px !important; margin-right: 3px !important; }
-    }
-
-    /* Hover effect for compatible email clients - YOUR EXACT ORIGINAL */
-    a.cta-button {
-      background-color: #D87C5A !important;
-      color: #F5F0E6 !important;
-      text-decoration: none;
-      font-weight: 600;
-      font-family: 'Montserrat', Arial, sans-serif;
-      border-radius: 10px;
-      display: inline-block;
-      padding: 14px 40px;
-      font-size: 18px;
-      transition: background-color 0.3s ease;
-    }
-    a.cta-button:hover {
-      background-color: #333F48 !important;
-      color: #F5F0E6 !important;
-    }
-    /* Social icons container - YOUR EXACT ORIGINAL */
+    /* Social icons container */
     .social-icons-container {
       padding-top: 20px;
       text-align: left;
@@ -82,82 +19,98 @@
     .social-icons img {
       width: 24px;
       height: 24px;
-      filter: invert(14%) sepia(14%) saturate(0%) hue-rotate(168deg) brightness(92%) contrast(87%);
       vertical-align: middle;
     }
-    .social-icons a:hover img {
-      filter: invert(51%) sepia(24%) saturate(745%) hue-rotate(191deg) brightness(85%) contrast(90%);
+    /* App store icons container */
+    .app-store-container {
+      text-align: left;
+      margin: 20px 0;
+      font-family: 'Roboto', Arial, sans-serif;
+    }
+    .app-store-icons {
+      margin-top: 10px;
+      text-align: left;
+    }
+    .app-store-icons a {
+      display: inline-block;
+      margin-right: 10px;
+      text-decoration: none;
+    }
+    .app-store-icons img {
+      width: 48px;
+      height: 48px;
     }
   </style>
 </head>
-<body class="dark-mode-bg" style="margin:0; padding:0; background:#F5F0E6; font-family: 'Roboto', Arial, sans-serif;">
+<body style="margin:0; padding:0; background:#FFFFFF; font-family: 'Roboto', Arial, sans-serif;">
 
-  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="dark-mode-bg" bgcolor="#F5F0E6">
+  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF">
     <tr>
       <td align="center" style="padding:20px;">
-        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" class="dark-mode-white" style="background:#FFFFFF; border-radius:8px; overflow:hidden;">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600" style="background:#FFFFFF; border-radius:8px; overflow:hidden;">
 
-          <!-- Header with clickable logo and text - YOUR EXACT ORIGINAL STRUCTURE -->
+          <!-- Header with image -->
           <tr>
-            <td class="header-td dark-mode-header" bgcolor="#333F48" style="padding: 20px 20px;">
-              <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" style="width:auto;">
-                <tr>
-                  <td align="center" valign="middle">
-                    <a href="https://www.thefifthverse.com/qr001/email" title="Go to The Fifth Verse" aria-label="Go to The Fifth Verse" style="text-decoration:none; display:flex; align-items:center; color: #F5F0E6;">
-                      <img src="https://the-fifth-verse.github.io/media/Logo.png" alt="The Fifth Verse" width="50" height="50" class="logo-img" style="display:block; border:none;"/>
-                      <span class="logo-span dark-mode-white-text" style="font-family: 'Futura', Arial, sans-serif; font-size:25px; font-weight:350; letter-spacing:0.06em; white-space: nowrap; margin-left: 12px; color: #F5F0E6;">
-                        THE FIFTH VERSE
-                      </span>
-                    </a>
-                  </td>
-                </tr>
-              </table>
+            <td bgcolor="#333F48" style="padding: 0;">
+              <a href="https://www.thefifthverse.com/qr001/email" title="Go to The Fifth Verse" aria-label="Go to The Fifth Verse" style="text-decoration:none; display:block;">
+                <img src="dark_header.png" alt="The Fifth Verse" width="600" height="90" style="display:block; border:none; width: 100%; height: auto; max-width: 600px;"/>
+              </a>
             </td>
           </tr>
 
           <!-- Body content -->
           <tr>
-            <td class="content-td dark-mode-white dark-mode-text" style="color:#2A5D5E; font-family: 'Roboto', Arial, sans-serif; font-size:16px; line-height:1.6; padding: 30px 40px;">
-              <p class="body-text" style="margin:0 0 20px 0;"><b>Hi {{name}}</b></p>
-              <p class="body-text" style="margin:0 0 20px 0;"><b>You've shared your story, your hopes, and verified yourself</b>- all done.<br/>
-               Now it's on us. We'll review your details, and once everything checks out, we'll let you know.</p>
+            <td style="color:#000000; font-family: 'Roboto', Arial, sans-serif; font-size:16px; line-height:1.6; padding: 30px 40px;">
+              <p style="margin:0 0 20px 0;"><b>Hi {{name}}</b></p>
+              <p style="margin:0 0 20px 0;"><b>Welcome to The Fifth Verse</b>, we're thrilled you're here.<br/>
+              You've just joined a space built to spark real connections, the kind that live beyond the screen.</p>
 
-              <p class="body-text" style="margin:0 0 24px 0;"> That's when you'll receive a personalized invite to our upcoming events, your chance to meet people who truly get you.</p>
+              <p style="margin:0 0 16px 0;">Here's what comes next:</p>
+              <p style="margin:0 0 10px 0;"><b>1. Tell us about you</b> &rarr; Start with a short quiz about yourself.</p>
+              <p style="margin:0 0 10px 0;"><b>2. Tell us who you're seeking</b> &rarr; Share what matters most to you in a partner.</p>
+              <p style="margin:0 0 20px 0;"><b>3. Verify yourself</b> &rarr; So we know it's truly you.</p>
 
-              <p class="body-text" style="margin:0 0 16px 0;"><b>✨ The stage is almost yours.</b></p>
+              <p style="margin:0 0 24px 0;">And then, the best part, we'll send you a personalized invite to one of our curated events, where the magic of meeting in real life begins.</p>
 
-              <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" style="margin: 0 auto 30px auto;">
-                <tr>
-                  <td align="center" bgcolor="#D87C5A" style="border-radius: 10px;">
-                    <a href="https://www.instagram.com/thefifthverse" target="_blank" title="The Fifth Verse Instagram" aria-label="The Fifth Verse Instagram" class="cta-button" style="color: #F5F0E6 !important;">
-                      Follow The Fifth Verse ✨
-                    </a>
-                  </td>
-                </tr>
-              </table>
+              <p style="margin:0 0 24px 0;">
+                <b><a href="https://www.thefifthverse.com/qr001/email" style="color: #0066CC; text-decoration: none;">Resume your journey here.</a></b>
+              </p>
 
-              <p class="body-text" style="margin:0 0 5px 0;">We can't wait to see your story unfold.</p>
-              <p class="body-text" style="margin:0;"><b>With warmth,<br/>Co-Founders, The Fifth Verse <br/>Adinath & Krishna</b></p>
+              <!-- App Store Download Section -->
+              <div class="app-store-container">
+                <p style="margin:0 0 10px 0; font-weight: bold; color:#000000; text-align: left;">Download The Fifth Verse app here</p>
+                <div class="app-store-icons">
+                  <a href="#" target="_blank" title="Download on App Store" aria-label="Download on App Store">
+                    <img src="app_store.png" alt="Download on App Store" width="48" height="48" />
+                  </a>
+                  <a href="#" target="_blank" title="Get it on Google Play" aria-label="Get it on Google Play">
+                    <img src="play_store.png" alt="Get it on Google Play" width="48" height="48" />
+                  </a>
+                </div>
+              </div>
 
-              <!-- Social handles left aligned - YOUR EXACT ORIGINAL -->
+              <p style="margin:0 0 5px 0;">We can't wait to see your story unfold.</p>
+              <p style="margin:0;"><b>With warmth,<br/>Co-Founders, The Fifth Verse <br/>Adinath & Krishna</b></p>
+
+              <!-- Social handles left aligned -->
               <div class="social-icons-container">
                 <div class="social-icons" style="text-align:left;">
                   <a href="https://www.instagram.com/thefifthverse" target="_blank" title="Instagram" aria-label="Instagram">
-                    <img src="https://the-fifth-verse.github.io/media/instagram.png" alt="Instagram" width="24" height="24" />
+                    <img src="instagram.png" alt="Instagram" width="24" height="24" />
                   </a>
                   <a href="https://wa.me/919980216807?text=Hello%21" target="_blank" title="WhatsApp" aria-label="WhatsApp">
-                    <img src="https://the-fifth-verse.github.io/media/whatsapp.png" alt="WhatsApp" width="24" height="24" />
+                    <img src="whatsapp.png" alt="WhatsApp" width="24" height="24" />
                   </a>
                 </div>
               </div>
             </td>
           </tr>
 
-          <!-- Footer with clickable copyright -->
+          <!-- Footer with dark footer image -->
           <tr>
-            <td class="footer-td dark-mode-header" bgcolor="#333F48" style="text-align:center; padding: 15px 20px; font-family: 'Roboto', Arial, sans-serif; font-size: 14px;">
-              <a href="https://www.thefifthverse.com/qr001/email" title="Go to The Fifth Verse" aria-label="Go to The Fifth Verse" class="dark-mode-white-text" style="color:#F5F0E6; text-decoration:none;">
-                © 2025 The Fifth Verse. All rights reserved
+            <td style="padding: 0;">
+              <a href="https://www.thefifthverse.com/qr001/email" title="Go to The Fifth Verse" aria-label="Go to The Fifth Verse" style="text-decoration:none; display:block;">
+                <img src="dark_footer.png" alt="© 2025 The Fifth Verse. All rights reserved" width="600" height="60" style="display:block; border:none; width: 100%; height: auto; max-width: 600px;"/>
               </a>
             </td>
           </tr>
